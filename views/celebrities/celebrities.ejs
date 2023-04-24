@@ -1,0 +1,8 @@
+<h2>List of celebrities</h2>
+<% if (celebrities.length === 0) { %>
+    <p>No celebrity in the DB yet !</p>
+<% } else { %>
+    <% celebrities.forEach((celeb) => { %>
+        <p><%= celeb.name%></p>
+    <% }) %>
+<% } %>
